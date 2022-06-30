@@ -1,0 +1,65 @@
+{% extends "component/base.html" %}
+{% load static %}
+
+{% block extra_head %}
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+{% endblock %}
+
+{% block page_content %}
+
+<style>
+	.row>* {
+	 	padding-right: 0px;
+	}
+  .content-header{
+    box-shadow: 0 5px 20px 0px lightgrey; height: 186px; background-image: url(https://bv-kidsloop.s3.ap-northeast-2.amazonaws.com/media/image/Top_1920x186_B.png)
+  }
+  .header-margin{
+    margin: 0px 0 0 86px;
+  }
+  .img-margin{
+    margin-right:5rem;
+  }
+  .header-text{
+    position: absolute; font-size: 16.5px; font-weight: 800; color: #1596ea; text-align: center; font-family: 'Nanum Gothic', sans-serif; margin: 180px 0px 0px 37px; letter-spacing: 0;
+  }
+  .user-login{
+    font-size: 20px; font-family: 'Nanum Gothic', sans-serif; font-weight: bold; color: #808080; margin: 65px 85px 0 0; text-align: left;
+  }
+
+  .user-login img{
+    vertical-align: middle; margin: 0 7px 11px 0;
+  }
+  .footer{
+    float: left; margin-left: 20px;
+  }
+</style>
+
+  <div class="content-header">
+    <header class="d-flex flex-wrap align-items-center justify-content-md-between header-margin">
+      <a href="/" class="d-flex align-items-center text-decoration-none">
+      	<img src="{% static 'image/index/badanamu-logo.png' %}" class="mt-4 img-margin" alt="">
+        <p class="header-text">Bada Kinder</p>
+      </a>
+      <div>
+      	<div class="user-login">
+          <img src="{% static 'image/index/icon-thumb.png' %}" alt="">
+			    <br>
+			    <span><a href="{% url 'login' %}">Logout</a></span>
+		    </div>
+	    </div>
+    </header>
+  </div>
+    
+
+  <div class="row">	
+    {% block sidebar %}
+    {% endblock %}
+
+    <div class="col-9">
+        {% block content %}
+        {% endblock %}
+        <div class="footer">Copyright © 2021 by KidsLoop Co.,Ltd. All Rights Reserved.</div>
+    </div>
+  </div>
+{% endblock %}

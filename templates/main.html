@@ -1,0 +1,58 @@
+{% extends "component/sidebar.html" %}
+{% load static %}
+
+{% block content %}
+<style>
+	.level_box_area{
+		margin: 47px 0 0 10px; 
+		width: 340px; 
+		height: 520px; 
+		background-size: cover; 
+		background-repeat: no-repeat;
+	}
+	.age_badge{
+		margin-left: 24px;
+	}
+	.level-class-area{
+		text-align: center; 
+		margin: 6px 0 13px 0;
+	}
+</style>
+<div className="container px-5">
+	<div class="row mb-3 px-5">
+		<a 
+			href="/level/A"
+			class="level_box_area" 
+			style="background-image: url('{% static 'image/index/a-bg.png' %}'); ">
+			<div>
+				<img class="age_badge" src="{% static 'image/index/5.png' %}" alt="">
+			</div>
+			<div class="level-class-area">
+				<img class="level_class" src="{% static 'image/index/level-a.png' %}" alt="">
+			</div>
+		</a>
+		<a 
+			href="/level/B" 
+			class="level_box_area" 
+			style="background-image: url('{% static 'image/index/b-bg.png' %}');">
+			<div>
+				<img class="age_badge" src="{% static 'image/index/5.png' %}" alt="">
+			</div>
+			<div class="level-class-area">
+				<img class="level_class" src="{% static 'image/index/level-b.png' %}" alt="">
+			</div>
+		</a>
+		<a 
+			href="/level/C" 
+			class="level_box_area" 
+			style="background-image: url('{% static 'image/index/c-bg.png' %}'); ">
+			<div>
+				<img class="age_badge" src="{% static 'image/index/5.png' %}" alt="">
+			</div>
+			<div class="level-class-area">
+				<img class="level_class" src="{% static 'image/index/level-c.png' %}" alt="">
+			</div>
+		</a>
+	</div>
+</div>
+{% endblock %}

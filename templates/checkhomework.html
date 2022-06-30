@@ -1,0 +1,25 @@
+{% extends "component/sidebar.html" %}
+{% load static %}
+
+{% block content %}
+<style>
+	.content-checkhomework{
+    	text-align: center; padding-top: 190px;
+  	}
+  	.img-checkhomework{
+		width: 30%; cursor: pointer;
+	}
+	.text-checkhomework{
+		padding-top: 25px; padding-bottom: 25px; font-size: 20px; margin-top: 20px; padding-left: 45px; font-weight: bold; color: #1596ea;
+	}
+</style>
+	<div class="content-checkhomework">
+		<a href="https://auth.kidsloop.live/?continue=https%3A%2F%2Fhub.kidsloop.live%2F%23%2F#/" 
+			target="_blank">
+			<img class="img-checkhomework" src="{% static 'image/board/url_logo.png' %}" alt="">
+		</a>
+		<div class="text-checkhomework">Hover and click the logo to enter the KidsLoop Platform.</div>
+		
+	</div>
+
+{% endblock %}
