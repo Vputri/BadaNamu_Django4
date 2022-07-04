@@ -21,8 +21,14 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path("", Login.as_view(), name="login"),
     path("main", Main.as_view(), name="main"),
+    path("activity-book", Activity_Book.as_view(), name="activity-book"),
+    path("teacher-guide", Teachers_Guide.as_view(), name="teacher-guide"),
     path("checkhomework", Checkhomework.as_view(), name="checkhomework"),
-    path("activity-book", Activity_Book.as_view(), name="activity_book"),
+    path("tutorial-video", Videos.as_view(), name="videos"),
+    path("tutorial-pdf", Files.as_view(), name="files"),
+]
+
+"""
 
     path("level/A", LevelA.as_view(), name="levelA"),
     path("level/B", LevelB.as_view(), name="levelB"),
@@ -72,6 +78,6 @@ urlpatterns = [
     path("board/studyplan/34", Board_Studyplan34.as_view(), name="board_studyplan_34"),
     path("board/studyplan/40", Board_Studyplan40.as_view(), name="board_studyplan_40"),
     path("contents/nemies", Contents_Nemies.as_view(), name="contents_nemies"),
-]
+"""
 
 

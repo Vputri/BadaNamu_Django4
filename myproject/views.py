@@ -5,8 +5,25 @@ from django.contrib.auth.decorators import login_required
 class Login(LoginView):
     template_name = 'login.html'
 
+class Activity_Book(TemplateView):
+    template_name = "activity-book.html"
+
+class Teachers_Guide(TemplateView):
+    template_name = "teacher's-guide.html"
+
 class Main(LoginView):
     template_name = 'main.html'
+
+class Checkhomework(TemplateView):
+    template_name = "checkhomework.html"
+
+class Videos(TemplateView):
+    template_name = "videos.html"
+
+class Files(TemplateView):
+    template_name = "files.html"
+
+"""
 
 class LevelA(TemplateView):
     template_name = "level/A/index.html"
@@ -26,12 +43,6 @@ class Book_1B(TemplateView):
 class Book_1C(TemplateView):
     template_name = "level/C/1.html"
 
-class Checkhomework(TemplateView):
-    template_name = "checkhomework.html"
-
-class Activity_Book(TemplateView):
-    template_name = "activity-book.html"
-
 class Board_Notice(TemplateView):
     template_name = "board/notice/index.html"
 
@@ -46,3 +57,5 @@ class Board_Studyplan34(TemplateView):
 
 class Contents_Nemies(TemplateView):
     template_name = "contents/nemies.html"
+
+"""
