@@ -2,59 +2,62 @@
 {% load static %}
 
 {% block page_content %}
-	<main>
-		<div class="container-fluid px-4">
-			
-			<div class="row gx-3 gx-lg-4 row-cols-2 row-cols-md-2 row-cols-xl-3 justify-content-left">
-				<div class="col mb-5">
-					<div class="card h-100">
-						<!-- Product image-->
-						<img class="card-img-top" 
-							src="https://klid-prod-bada-kinder.s3.ap-southeast-3.amazonaws.com/Screen_Shot_2022_06_16_at_10_49_18_06ada6447e.png" 
-							data-bs-toggle="modal"
-							data-bs-target="#vimeo_modal_10"
-							alt="..." />
-						<!-- Product details-->
-						<div class="card-body" style="background-color: #9cd8ff">
-							<div class="text-center text-white" >
-								<!-- Product name-->
-								<h6>Activity Book-Level A-Month 1</h6>
-							</div>
-						</div>
+<style>
+	.level_box_area{
+		margin: 20px 20px 0px 10px; 
+		width: 340px; 
+		height: 520px; 
+		background-size: cover; 
+		background-repeat: no-repeat;
+	}
+	.age_badge{
+		margin-left: 24px;
+		height:120px;
+	}
+	.level-class-area{
+		text-align: center; 
+		margin: 6px 0 13px 0;
+	}
+</style>
 
-						<div id="vimeo_modal_10" class="modal fade" role="dialog">
-							<div class="modal-dialog" style="width: 1200px;">
-								<iframe src="https://klid-prod-bada-kinder.s3.ap-southeast-3.amazonaws.com/A_Month_1_AB_95fca3a8b4.pdf"
-									width="800px" height="800px" frameborder="0">
-							    </iframe>
-							</div>
+	<main>
+		<div class="container-fluid px-5">
+			<div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-left">
+				
+				<div class="col mb-5 level_box_area"
+					style="background-image: url('{% static 'image/index/a-bg.png' %}')">
+					<a href="/level/A">
+						<div>
+							<img class="age_badge" src="{% static 'image/index/5.png' %}" alt="">
 						</div>
-					</div>
+						<div class="level-class-area">
+							<img class="level_class" src="{% static 'image/index/level-a.png' %}" alt="">
+						</div>
+					</a>
 				</div>
 
-				<div class="col mb-5">
-					<div class="card h-100">
-						<img class="card-img-top" 
-							src="https://klid-prod-bada-kinder.s3.ap-southeast-3.amazonaws.com/Screen_Shot_2022_06_16_at_13_48_07_a8f4952786.png" 
-							data-bs-toggle="modal"
-							data-bs-target="#vimeo_modal_11"
-							alt="..." />
-						<!-- Product details-->
-						<div class="card-body" style="background-color: #9cd8ff">
-							<div class="text-center text-white" >
-								<!-- Product name-->
-								<h6>Activity Book-Level A-Month 2</h6>
-							</div>
+				<div class="col mb-5 level_box_area"
+					style="background-image: url('{% static 'image/index/b-bg.png' %}')">
+					<a href="/level/A">
+						<div>
+							<img class="age_badge" src="{% static 'image/index/6.png' %}" alt="">
 						</div>
+						<div class="level-class-area">
+							<img class="level_class" src="{% static 'image/index/level-b.png' %}" alt="">
+						</div>
+					</a>
+				</div>
 
-						<div id="vimeo_modal_11" class="modal fade" role="dialog">
-							<div class="modal-dialog" style="width: 1200px;">
-								<iframe src="https://klid-prod-bada-kinder.s3.ap-southeast-3.amazonaws.com/A_Month_2_AB_d3661bec0e.pdf"
-									width="800px" height="800px" frameborder="0">
-								</iframe>
-							</div>
+				<div class="col mb-5 level_box_area"
+					style="background-image: url('{% static 'image/index/c-bg.png' %}')">
+					<a href="/level/A">
+						<div>
+							<img class="age_badge" src="{% static 'image/index/7.png' %}" alt="">
 						</div>
-					</div>
+						<div class="level-class-area">
+							<img class="level_class" src="{% static 'image/index/level-c.png' %}" alt="">
+						</div>
+					</a>
 				</div>
 
 			</div>

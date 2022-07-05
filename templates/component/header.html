@@ -9,41 +9,40 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 		<link rel="stylesheet" href="{% static 'css/styles.css' %}">
         <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <style>
+            .nav-background{
+                background-image: url(https://bv-kidsloop.s3.ap-northeast-2.amazonaws.com/media/image/Top_1920x186_B.png);
+				box-sizing: border-box; 
+				height: 186px;
+            }
+            .header-title{
+                font-size: 16.5px; 
+                font-weight: 800; 
+                color: #1596ea; 
+                text-align: center; 
+                font-family: 'Nanum Gothic', sans-serif; 
+                margin: 4px 0px 0 5px;
+
+            }
+        </style>
     </head>
     <body class="sb-nav-fixed">
-        <nav
-			class="sb-topnav navbar  navbar-dark bg-dark" 
-			style=
-				"background-image: url(https://bv-kidsloop.s3.ap-northeast-2.amazonaws.com/media/image/Top_1920x186_B.png);
-				box-sizing: border-box; 
-				height: 186px;"
-        >
+        <nav class="sb-topnav navbar  navbar-dark bg-dark nav-background">
             <a class="navbar-brand me-lg-5rem" href="#" style="margin-left: 5rem;">
-                <img src="{% static 'image/index/badanamu-logo.png' %}" height="156" alt="">
+                <img src="{% static 'image/index/badanamu-logo.png' %}" alt="">
+                <p class="header-title">Bada Kinder</p>
 			</a>
             
             <button 
-				class="btn btn-link btn-dark btn-sm order-1 order-lg-0 me-4 me-lg-0" 
+				class="btn btn-link btn-light btn-sm order-1 order-lg-0 me-4 me-lg-0 mt-4 mx-3" 
 				id="sidebarToggle" 
 				href="#!">
 				<i class="fas fa-bars"></i>
 			</button>
 
             <ul class="navbar-nav ms-auto me-3 me-lg-5rem">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle text-dark btn-xlg" 
-						id="navbarDropdown" 
-						href="#" 
-						role="button" 
-						data-bs-toggle="dropdown" 
-						aria-expanded="false"
-					>
-                        <i class="fas fa-user fa-fw"></i>
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="">Logout</a></li>
-                    </ul>
-                </li>
+                <img src="https://klid-prod-bada-kinder.s3.ap-southeast-3.amazonaws.com/django_static/media/profile_picture/tc.png" >
+                <span class="text-center"><a class="text-decoration-none" href="">Logout</a></span>
             </ul>
         </nav>
 
@@ -51,7 +50,7 @@
             <div id="layoutSidenav_nav" style="height: auto;">
                 <nav class="sb-sidenav accordion sb-sidenav-blue" 
 					id="sidenavAccordion" 
-					style="box-sizing: content-box; !important">
+					style="box-sizing: content-box; background-image: url(https://bv-kidsloop.s3.ap-northeast-2.amazonaws.com/media/image/Bada01.gif); background-position: bottom; background-repeat: no-repeat; background-size: 250px; !important ">
                     <div class="sb-sidenav-menu">
                         <div class="nav btn-toggle-nav">
                             <a class="nav-link" 
