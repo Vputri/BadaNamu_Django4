@@ -4,9 +4,9 @@
 {% block page_content %}
 <style>
 	.level_box_area{
-		margin: 20px 10px 0px 10px; 
-		width: 376px; 
-		height: 582px; 
+		margin: 20px 20px 0px 10px; 
+
+		height: 632px; 
 		background-size: cover; 
 		background-repeat: no-repeat;
 	}
@@ -20,11 +20,9 @@
 </style>
 
 	<main>
-		<div class="container-fluid px-5">
-			<div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-left">
-				
-				<div class="col mb-5 level_box_area"
-					style="background-image: url('{% static 'image/index/a-bg.png' %}')">
+		<div class="container">
+			<div class="row">
+				<div class="col level_box_area" style="background-image: url('{% static 'image/index/a-bg.png' %}')">
 					<a href="/level/A">
 						<div>
 							<img class="age_badge" src="{% static 'image/index/5.png' %}" alt="">
@@ -34,9 +32,7 @@
 						</div>
 					</a>
 				</div>
-
-				<div class="col mb-5 level_box_area"
-					style="background-image: url('{% static 'image/index/b-bg.png' %}')">
+				<div class="col level_box_area" style="background-image: url('{% static 'image/index/b-bg.png' %}')">
 					<a href="/level/A">
 						<div>
 							<img class="age_badge" src="{% static 'image/index/6.png' %}" alt="">
@@ -46,9 +42,7 @@
 						</div>
 					</a>
 				</div>
-
-				<div class="col mb-5 level_box_area"
-					style="background-image: url('{% static 'image/index/c-bg.png' %}')">
+				<div class="col level_box_area" style="background-image: url('{% static 'image/index/c-bg.png' %}')">
 					<a href="/level/A">
 						<div>
 							<img class="age_badge" src="{% static 'image/index/7.png' %}" alt="">
@@ -58,9 +52,7 @@
 						</div>
 					</a>
 				</div>
-
 			</div>
 		</div>
-		
 	</main>
 {% endblock %}
