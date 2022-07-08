@@ -26,15 +26,14 @@ urlpatterns = [
     path("checkhomework", Checkhomework.as_view(), name="checkhomework"),
     path("tutorial-video", Videos.as_view(), name="videos"),
     path("tutorial-pdf", Files.as_view(), name="files"),
+    path("level/1", LevelA.as_view(), name="levelA"),
+    path("level/2", LevelB.as_view(), name="levelB"),
+    path("level/3", LevelC.as_view(), name="levelC"),
+    path("book/22", Book_1A.as_view(), name="book_1A"),
 ]
 
 """
-
-    path("level/A", LevelA.as_view(), name="levelA"),
-    path("level/B", LevelB.as_view(), name="levelB"),
-    path("level/C", LevelC.as_view(), name="levelC"),
-
-    path("book/1/A", Book_1A.as_view(), name="book_1A"),
+    
     path("book/2/A", Book_1A.as_view(), name="book_2A"),
     path("book/3/A", Book_1A.as_view(), name="book_3A"),
     path("book/4/A", Book_1A.as_view(), name="book_4A"),

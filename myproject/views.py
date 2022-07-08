@@ -23,19 +23,21 @@ class Videos(TemplateView):
 class Files(TemplateView):
     template_name = "files.html"
 
-"""
-
 class LevelA(TemplateView):
-    template_name = "level/A/index.html"
+    template_name = "level A/index.html"
 
 class LevelB(TemplateView):
-    template_name = "level/B/index.html"
+    template_name = "level B/index.html"
 
 class LevelC(TemplateView):
-    template_name = "level/C/index.html"
+    template_name = "level C/index.html"
 
 class Book_1A(TemplateView):
-    template_name = "level/A/1.html"
+    template_name = "level A/book1.html"
+
+
+"""
+
 
 class Book_1B(TemplateView):
     template_name = "level/B/1.html"

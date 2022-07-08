@@ -1,0 +1,130 @@
+{% extends "component/header.html" %}
+{% load static %}
+{% load navigation %}
+
+{% block content %}
+
+<div id="layoutSidenav" style="background-color: #fffdec;;">
+    <div id="layoutSidenav_nav" style="height: auto;">
+        <nav class="sb-sidenav accordion sb-sidenav-blue" 
+            id="sidenavAccordion" 
+            style="box-sizing: content-box; background-image: url(https://bv-kidsloop.s3.ap-northeast-2.amazonaws.com/media/image/Bada01.gif); background-position: bottom; background-repeat: no-repeat; background-size: 250px; !important ">
+            <div class="sb-sidenav-menu">
+                <div class="nav btn-toggle-nav">
+                    <a class="nav-link" 
+                        href="#" data-bs-toggle="collapse" 
+                        data-bs-target="#collapseBadaKinder" 
+                        aria-expanded="false" 
+                        aria-controls="collapseBadaKinder">
+                        <div class="sb-nav-link-icon">
+                            <img class="img"
+                            src="{% static 'image/index/icon-contents.png' %}" 
+                            alt="">
+                        </div>
+                        Bada Kinder
+                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                    </a>
+                    <hr>
+                    <div class="collapse show" 
+                        id="collapseBadaKinder" 
+                        aria-labelledby="headingOne" 
+                        data-bs-parent="#sidenavAccordion">
+                        <nav class="sb-sidenav-menu-nested nav">
+                            <a class="nav-link {% active request.path 'main' %}" 
+                                href="{% url 'main' %}">
+                                Videos
+                            </a>
+                            <a class="nav-link {% active request.path 'teacher-guide' %}" 
+                                href="{% url 'teacher-guide' %}">
+                                Teacher's Guide
+                            </a>
+                            <a class="nav-link {% active request.path 'activity-book' %}" 
+                                href="{% url 'activity-book' %}">
+                                Activity Book
+                            </a>
+                        </nav>
+                    </div>
+                    <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseTutorial" aria-expanded="false" aria-controls="collapseTutorial">
+                        <div class="sb-nav-link-icon">
+                            <img
+                                src="{% static 'image/index/icon-board.png' %}" 
+                                alt="">
+                        </div>
+                        Tutorial
+                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                    </a>
+                    <hr>
+                    <div class="collapse" id="collapseTutorial" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">
+                        <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
+                            <a class="nav-link {% active request.path 'videos' %}" 
+                                href="{% url 'videos' %}">
+                                Videos
+                            </a>
+                            <a class="nav-link {% active request.path 'files' %}" 
+                                href="{% url 'files' %}">
+                                Files
+                            </a>
+                        </nav>
+                    </div>
+
+                    <a class="nav-link collapsed" 
+                        href="#" 
+                        data-bs-toggle="collapse"
+                         data-bs-target="#collapseHomework" 
+                         aria-expanded="false" 
+                         aria-controls="collapseHomework">
+                        <div class="sb-nav-link-icon">
+                            <img src="{% static 'image/index/icon-homework.png' %}" alt="">
+                        </div>
+                        Homework
+                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                    </a>
+                    <hr>
+                    <div class="collapse" id="collapseHomework" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                        <nav class="sb-sidenav-menu-nested nav">
+                            <a class="nav-link {% active request.path 'checkhomework' %}" 
+                                href="{% url 'checkhomework' %}">
+                                KinderLoop Home
+                            </a>
+                        </nav>
+                    </div>
+                   
+                </div>
+            </div>
+            
+        </nav>
+    </div>
+    <div id="layoutSidenav_content" 
+        style="background-color: #fffdec;
+        height: 100%;
+        background-image: url({% static 'image/book/image.png' %});
+        background-repeat: no-repeat;
+        background-position: 11px -186px;
+        background-size: cover;">
+        <main>
+                <div style="text-align: center; padding: 19px 508px 0 0; height: 144px;">
+                    <div style="width: 370px; display: flex; align-items: center; margin: 0 auto;">
+                        <div>
+                            <img style="margin-right: 30px;" src="https://klid-prod-bada-kinder.s3.ap-southeast-3.amazonaws.com/django_static/image/book/level_title_A.png" alt="">
+                        </div>
+                        <div class="book_num">
+                            <img style="width: 235px;
+                            height: 77px;" src="https://klid-prod-bada-kinder.s3.ap-southeast-3.amazonaws.com/django_static/image/book/monthA.png" alt="">
+                        </div>
+                        <div style="font-family: 'Chalkduster', sans-serif;
+                        font-size: 100px;
+                        color: #ffc70a;">1</div>
+                    </div>
+                </div>
+        </main>
+        <footer class="py-4 mt-auto">
+            <div class="container-fluid px-4">
+                <div class="d-flex align-items-center justify-content-between small">
+                    <div class="text-muted">Copyright &copy; 2022 by KidsLoop Co.,Ltd. All Rights Reserved.</div>
+                    
+                </div>
+            </div>
+        </footer>
+    </div>
+</div>
+{% endblock %}

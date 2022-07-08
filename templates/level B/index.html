@@ -1,0 +1,173 @@
+{% extends "component/header.html" %}
+{% load static %}
+
+{% block content %}
+<style>
+    .side_logo{
+        width: 80%;
+        margin-top: 67px;
+    }
+    .book_icon{
+        background-image: url('https://klid-prod-bada-kinder.s3.ap-southeast-3.amazonaws.com/django_static/image/level_page/book-b.png');
+        width: 202px;
+        height: 206px;
+        float: left;
+    }
+    .book_icon:hover{
+	    background-image: url("https://klid-prod-bada-kinder.s3.ap-southeast-3.amazonaws.com/django_static/image/level_page/book-b-on.png");
+	    width: 202px;
+	    height: 206px;
+	    float: left;
+	}
+    .book_title{
+        text-align: center;
+        margin-top: 23px;
+    }
+    .img_icon{
+        height: 130px;
+    }
+    .navyellow{
+        box-sizing: content-box; background-color: #9ab738;
+    }
+</style>
+
+<div id="layoutSidenav" style="background-color: #e7ffdf">
+    <div id="layoutSidenav_nav" style="height: auto;">
+        <nav class="sb-sidenav accordion navyellow" 
+            id="sidenavAccordion">
+            <div class="sb-sidenav-menu">
+                <div class="nav btn-toggle-nav">
+                    <img class="side_logo rounded mx-auto d-block" 
+                        src="{% static 'image/index/level-b.png' %}">
+                   
+                </div>
+            </div>
+            
+        </nav>
+    </div>
+    <div id="layoutSidenav_content" style="padding-left: 25px; margin-bottom:10px;
+    background-image: url('https://klid-prod-bada-kinder.s3.ap-southeast-3.amazonaws.com/django_static/image/level_page/image-b.png');
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: 100% 85%;">
+        <main>
+            <div class="row px-5 mt-5">
+                <div class="col">
+                    <a href="/book/22" class="book_icon">
+                        <div class="book_title">
+                            <img class="img_icon"
+                                src="https://klid-prod-bada-kinder.s3.ap-southeast-3.amazonaws.com/django_static/image/level_page/month-1.png" alt="">
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="/book/22" class="book_icon">
+                        <div class="book_title">
+                            <img class="img_icon"
+                                src="https://klid-prod-bada-kinder.s3.ap-southeast-3.amazonaws.com/django_static/image/level_page/month-2.png" alt="">
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="/book/22" class="book_icon">
+                        <div class="book_title">
+                            <img class="img_icon"
+                                src="https://klid-prod-bada-kinder.s3.ap-southeast-3.amazonaws.com/django_static/image/level_page/month-3.png" alt="">
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="/book/22" class="book_icon">
+                        <div class="book_title">
+                            <img class="img_icon"
+                                src="https://klid-prod-bada-kinder.s3.ap-southeast-3.amazonaws.com/django_static/image/level_page/month-4.png" alt="">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-4"></div>
+            </div>
+
+            <div class="row px-5">
+                <div class="col">
+                    <a href="/book/22" class="book_icon">
+                        <div class="book_title">
+                            <img class="img_icon"
+                                src="https://klid-prod-bada-kinder.s3.ap-southeast-3.amazonaws.com/django_static/image/level_page/month-5.png" alt="">
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="/book/22" class="book_icon">
+                        <div class="book_title">
+                            <img class="img_icon"
+                                src="https://klid-prod-bada-kinder.s3.ap-southeast-3.amazonaws.com/django_static/image/level_page/month-6.png" alt="">
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="/book/22" class="book_icon">
+                        <div class="book_title">
+                            <img class="img_icon"
+                                src="https://klid-prod-bada-kinder.s3.ap-southeast-3.amazonaws.com/django_static/image/level_page/month-7.png" alt="">
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="/book/22" class="book_icon">
+                        <div class="book_title">
+                            <img class="img_icon"
+                                src="https://klid-prod-bada-kinder.s3.ap-southeast-3.amazonaws.com/django_static/image/level_page/month-8.png" alt="">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-4"></div>
+            </div>
+
+            <div class="row px-5">
+                <div class="col">
+                    <a href="/book/22" class="book_icon">
+                        <div class="book_title">
+                            <img class="img_icon"
+                                src="https://klid-prod-bada-kinder.s3.ap-southeast-3.amazonaws.com/django_static/image/level_page/month-9.png" alt="">
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="/book/22" class="book_icon">
+                        <div class="book_title">
+                            <img class="img_icon"
+                                src="https://klid-prod-bada-kinder.s3.ap-southeast-3.amazonaws.com/django_static/image/level_page/month-10.png" alt="">
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="/book/22" class="book_icon">
+                        <div class="book_title">
+                            <img class="img_icon"
+                                src="https://klid-prod-bada-kinder.s3.ap-southeast-3.amazonaws.com/django_static/image/level_page/month-11.png" alt="">
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="/book/22" class="book_icon">
+                        <div class="book_title">
+                            <img class="img_icon"
+                                src="https://klid-prod-bada-kinder.s3.ap-southeast-3.amazonaws.com/django_static/image/level_page/month-12.png" alt="">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-4"></div>
+            </div>
+        </main>
+
+        <footer class="py-4 mt-auto">
+            <div class="container-fluid px-4">
+                <div class="d-flex align-items-center justify-content-between small">
+                    <div class="text-muted">Copyright &copy; 2022 by KidsLoop Co.,Ltd. All Rights Reserved.</div>
+                    
+                </div>
+            </div>
+        </footer>
+    </div>
+</div>
+{% endblock %}
