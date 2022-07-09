@@ -18,12 +18,11 @@
                 <div style="text-align: center; padding: 19px 508px 0 0; height: 144px;">
                     <div style="width: 370px; display: flex; align-items: center;">
                         <div>
-                            <img style="margin-right: 30px;" 
-                                src="https://klid-prod-bada-kinder.s3.ap-southeast-3.amazonaws.com/django_static/image/book/level_title_B.png" alt="">
+                            <img style="margin-right: 30px;" src="https://klid-prod-bada-kinder.s3.ap-southeast-3.amazonaws.com/django_static/image/book/level_title_B.png" alt="">
                         </div>
                         <div class="book_num">
-                            <img style="width: 235px; height: 77px;" 
-                            src="https://klid-prod-bada-kinder.s3.ap-southeast-3.amazonaws.com/django_static/image/book/monthB.png" alt="">
+                            <img style="width: 235px;
+                            height: 77px;" src="https://klid-prod-bada-kinder.s3.ap-southeast-3.amazonaws.com/django_static/image/book/monthB.png" alt="">
                         </div>
                         <div style="font-family: 'Chalkduster', sans-serif;
                         font-size: 100px;
@@ -32,87 +31,588 @@
                 </div>
 
                 <div class="row pt-3">
-                    <div class="col">
+                    <div class="col cursor">
                         <img src="{% static 'image/book/B_week-1.png' %}" alt="">
                     </div>
+                    
                     <div class="col cursor">
-                        <img src="{% static 'image/book/B_mon.png' %}" alt="">
+                        <img src="{% static 'image/book/B_mon.png' %}" alt=""
+                            data-bs-toggle="modal" 
+                            data-bs-target="#modal_1">
                     </div>
+
+                        <div class="modal fade" id="modal_1" role="dialog">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <p><a href="#" data-bs-toggle="modal" data-bs-target="#video1A"> Level A - Semester 1 - Video 1</a></p>
+                                    <p><a href="#" data-bs-toggle="modal" data-bs-target="#video1B">Smile With Me - Video</a></p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+
+                        <div id="video1A" class="modal fade" role="dialog">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <iframe width="800" height="500" src="https://www.youtube.com/embed/nwe76N7J0EI?rel=0&amp;controls=0&amp;showinfo=0&amp;start=1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+
+                        <div id="video1B" class="modal fade" role="dialog">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <iframe width="800" height="500" src="https://www.youtube.com/embed/nwe76N7J0EI?rel=0&amp;controls=0&amp;showinfo=0&amp;start=1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+
                     <div class="col cursor">
-                        <img src="{% static 'image/book/B_tue.png' %}" alt="">
+                        <img src="{% static 'image/book/B_tue.png' %}" alt=""
+                            data-bs-toggle="modal" 
+                            data-bs-target="#modal_2">
                     </div>
+
+                        <div class="modal fade" id="modal_2" role="dialog">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <p><a href="#" data-bs-toggle="modal" data-bs-target="#video2A"> Level A - Semester 1 - Video 1</a></p>
+                                    <p><a href="#" data-bs-toggle="modal" data-bs-target="#video2B">Smile With Me - Video</a></p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+
+                        <div id="video2A" class="modal fade" role="dialog">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <iframe width="800" height="500"src="https://www.youtube.com/embed/nwe76N7J0EI?rel=0&amp;controls=0&amp;showinfo=0&amp;start=1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+
+                        <div id="video2B" class="modal fade" role="dialog">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <iframe width="800" height="500" src="https://www.youtube.com/embed/nwe76N7J0EI?rel=0&amp;controls=0&amp;showinfo=0&amp;start=1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+
                     <div class="col cursor">
-                        <img src="{% static 'image/book/B_wed.png' %}" alt="">
+                        <img src="{% static 'image/book/B_wed.png' %}" alt=""
+                            data-bs-toggle="modal" 
+                            data-bs-target="#modal_3">
                     </div>
+                        <div class="modal fade" id="modal_3" role="dialog">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <p><a href="#" data-bs-toggle="modal" data-bs-target="#video3A"> Level A - Semester 1 - Video 1</a></p>
+                                    <p><a href="#" data-bs-toggle="modal" data-bs-target="#video3B">Smile With Me - Video</a></p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+
+                        <div id="video3A" class="modal fade" role="dialog">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <iframe width="800" height="500" src="https://www.youtube.com/embed/nwe76N7J0EI?rel=0&amp;controls=0&amp;showinfo=0&amp;start=1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+
+                        <div id="video3B" class="modal fade" role="dialog">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <iframe width="800" height="500" src="https://www.youtube.com/embed/nwe76N7J0EI?rel=0&amp;controls=0&amp;showinfo=0&amp;start=1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+
                     <div class="col cursor">
-                        <img src="{% static 'image/book/B_thu.png' %}" alt="">
+                        <img src="{% static 'image/book/B_thu.png' %}" alt=""
+                            data-bs-toggle="modal" 
+                            data-bs-target="#modal_4">
                     </div>
+
+                        <div class="modal fade" id="modal_4" role="dialog">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <p><a href="#" data-bs-toggle="modal" data-bs-target="#video4A"> Level A - Semester 1 - Video 1</a></p>
+                                    <p><a href="#" data-bs-toggle="modal" data-bs-target="#video4B">Smile With Me - Video</a></p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+
+                        <div id="video4A" class="modal fade" role="dialog">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <iframe width="800" height="500"src="https://www.youtube.com/embed/nwe76N7J0EI?rel=0&amp;controls=0&amp;showinfo=0&amp;start=1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+
+                        <div id="video4B" class="modal fade" role="dialog">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <iframe width="800" height="500" src="https://www.youtube.com/embed/nwe76N7J0EI?rel=0&amp;controls=0&amp;showinfo=0&amp;start=1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+
                     <div class="col-xl-4 col-sm-6 cursor">
-                        <img src="{% static 'image/book/B_fri.png' %}" alt="">
+                        <img src="{% static 'image/book/B_fri.png' %}" alt=""
+                            data-bs-toggle="modal" 
+                            data-bs-target="#modal_5">
                     </div>
+                        <div class="modal fade" id="modal_5" role="dialog">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <p><a href="#" data-bs-toggle="modal" data-bs-target="#video5A"> Level A - Semester 1 - Video 1</a></p>
+                                    <p><a href="#" data-bs-toggle="modal" data-bs-target="#video5B">Smile With Me - Video</a></p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+
+                        <div id="video5A" class="modal fade" role="dialog">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <iframe width="800" height="500" src="https://www.youtube.com/embed/nwe76N7J0EI?rel=0&amp;controls=0&amp;showinfo=0&amp;start=1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+
+                        <div id="video5B" class="modal fade" role="dialog">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <iframe width="800" height="500" src="https://www.youtube.com/embed/nwe76N7J0EI?rel=0&amp;controls=0&amp;showinfo=0&amp;start=1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
                 </div>
 
                 <div class="row">
                     <div class="col">
                         <img src="{% static 'image/book/B_week-2.png' %}" alt="">
                     </div>
+
                     <div class="col cursor">
-                        <img src="{% static 'image/book/B_mon.png' %}" alt="">
+                        <img src="{% static 'image/book/B_mon.png' %}" alt=""
+                            data-bs-toggle="modal" 
+                            data-bs-target="#modal_6">
                     </div>
+                        <div class="modal fade" id="modal_6" role="dialog">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <p><a href="#" data-bs-toggle="modal" data-bs-target="#video6A"> Level A - Semester 1 - Video 1</a></p>
+                                    <p><a href="#" data-bs-toggle="modal" data-bs-target="#video6B">Smile With Me - Video</a></p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+
+                        <div id="video6A" class="modal fade" role="dialog">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <iframe width="800" height="500" src="https://www.youtube.com/embed/nwe76N7J0EI?rel=0&amp;controls=0&amp;showinfo=0&amp;start=1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+
+                        <div id="video6B" class="modal fade" role="dialog">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <iframe width="800" height="500" src="https://www.youtube.com/embed/nwe76N7J0EI?rel=0&amp;controls=0&amp;showinfo=0&amp;start=1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+
                     <div class="col cursor">
-                        <img src="{% static 'image/book/B_tue.png' %}" alt="">
-                    </div>
+                        <img src="{% static 'image/book/B_tue.png' %}" alt=""
+                            data-bs-toggle="modal" 
+                            data-bs-target="#modal_7">
+                    </div>                   
+                        <div class="modal fade" id="modal_7" role="dialog">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <p><a href="#" data-bs-toggle="modal" data-bs-target="#video7A"> Level A - Semester 1 - Video 1</a></p>
+                                    <p><a href="#" data-bs-toggle="modal" data-bs-target="#video7B">Smile With Me - Video</a></p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+
+                        <div id="video7A" class="modal fade" role="dialog">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <iframe width="800" height="500" src="https://www.youtube.com/embed/nwe76N7J0EI?rel=0&amp;controls=0&amp;showinfo=0&amp;start=1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+
+                        <div id="video7B" class="modal fade" role="dialog">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <iframe width="800" height="500" src="https://www.youtube.com/embed/nwe76N7J0EI?rel=0&amp;controls=0&amp;showinfo=0&amp;start=1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+
                     <div class="col cursor">
-                        <img src="{% static 'image/book/B_wed.png' %}" alt="">
+                        <img src="{% static 'image/book/B_wed.png' %}" alt=""
+                            data-bs-toggle="modal" 
+                            data-bs-target="#modal_8">
                     </div>
+                        <div class="modal fade" id="modal_8" role="dialog">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <p><a href="#" data-bs-toggle="modal" data-bs-target="#video8A"> Level A - Semester 1 - Video 1</a></p>
+                                    <p><a href="#" data-bs-toggle="modal" data-bs-target="#video8B">Smile With Me - Video</a></p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+
+                        <div id="video8A" class="modal fade" role="dialog">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <iframe width="800" height="500" src="https://www.youtube.com/embed/nwe76N7J0EI?rel=0&amp;controls=0&amp;showinfo=0&amp;start=1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+
+                        <div id="video8B" class="modal fade" role="dialog">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <iframe width="800" height="500" src="https://www.youtube.com/embed/nwe76N7J0EI?rel=0&amp;controls=0&amp;showinfo=0&amp;start=1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+
                     <div class="col cursor">
-                        <img src="{% static 'image/book/B_thu.png' %}" alt="">
-                    </div>
+                        <img src="{% static 'image/book/B_thu.png' %}" alt=""
+                            data-bs-toggle="modal" 
+                            data-bs-target="#modal_9">
+                    </div>                  
+                        <div class="modal fade" id="modal_9" role="dialog">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <p><a href="#" data-bs-toggle="modal" data-bs-target="#video9A"> Level A - Semester 1 - Video 1</a></p>
+                                    <p><a href="#" data-bs-toggle="modal" data-bs-target="#video9B">Smile With Me - Video</a></p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+
+                        <div id="video9A" class="modal fade" role="dialog">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <iframe width="800" height="500" src="https://www.youtube.com/embed/nwe76N7J0EI?rel=0&amp;controls=0&amp;showinfo=0&amp;start=1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+
+                        <div id="video9B" class="modal fade" role="dialog">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <iframe width="800" height="500" src="https://www.youtube.com/embed/nwe76N7J0EI?rel=0&amp;controls=0&amp;showinfo=0&amp;start=1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+
                     <div class="col-xl-4 col-sm-6 cursor">
-                        <img src="{% static 'image/book/B_fri.png' %}" alt="">
+                        <img src="{% static 'image/book/B_fri.png' %}" alt=""
+                            data-bs-toggle="modal" 
+                            data-bs-target="#modal_10">
                     </div>
+                        <div class="modal fade" id="modal_10" role="dialog">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <p><a href="#" data-bs-toggle="modal" data-bs-target="#video10A"> Level A - Semester 1 - Video 1</a></p>
+                                    <p><a href="#" data-bs-toggle="modal" data-bs-target="#video10B">Smile With Me - Video</a></p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+
+                        <div id="video10A" class="modal fade" role="dialog">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <iframe width="800" height="500" src="https://www.youtube.com/embed/nwe76N7J0EI?rel=0&amp;controls=0&amp;showinfo=0&amp;start=1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+
+                        <div id="video10B" class="modal fade" role="dialog">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <iframe width="800" height="500" src="https://www.youtube.com/embed/nwe76N7J0EI?rel=0&amp;controls=0&amp;showinfo=0&amp;start=1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
                 </div>
 
                 <div class="row">
                     <div class="col">
                         <img src="{% static 'image/book/B_week-3.png' %}" alt="">
                     </div>
+
                     <div class="col cursor">
-                        <img src="{% static 'image/book/B_mon.png' %}" alt="">
+                        <img src="{% static 'image/book/B_mon.png' %}" alt=""
+                            data-bs-toggle="modal" 
+                            data-bs-target="#modal_11">
                     </div>
+                        <div class="modal fade" id="modal_11" role="dialog">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <p><a href="#" data-bs-toggle="modal" data-bs-target="#video11A"> Level A - Semester 1 - Video 1</a></p>
+                                    <p><a href="#" data-bs-toggle="modal" data-bs-target="#video11B">Smile With Me - Video</a></p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+
+                        <div id="video11A" class="modal fade" role="dialog">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <iframe width="800" height="500" src="https://www.youtube.com/embed/nwe76N7J0EI?rel=0&amp;controls=0&amp;showinfo=0&amp;start=1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+
+                        <div id="video11B" class="modal fade" role="dialog">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <iframe width="800" height="500" src="https://www.youtube.com/embed/nwe76N7J0EI?rel=0&amp;controls=0&amp;showinfo=0&amp;start=1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+
                     <div class="col cursor">
-                        <img src="{% static 'image/book/B_tue.png' %}" alt="">
+                        <img src="{% static 'image/book/B_tue.png' %}" alt=""
+                            data-bs-toggle="modal" 
+                            data-bs-target="#modal_12">
                     </div>
+                        <div class="modal fade" id="modal_12" role="dialog">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <p><a href="#" data-bs-toggle="modal" data-bs-target="#video12A"> Level A - Semester 1 - Video 1</a></p>
+                                    <p><a href="#" data-bs-toggle="modal" data-bs-target="#video12B">Smile With Me - Video</a></p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+
+                        <div id="video12A" class="modal fade" role="dialog">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <iframe width="800" height="500" src="https://www.youtube.com/embed/nwe76N7J0EI?rel=0&amp;controls=0&amp;showinfo=0&amp;start=1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+
+                        <div id="video12B" class="modal fade" role="dialog">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <iframe width="800" height="500" src="https://www.youtube.com/embed/nwe76N7J0EI?rel=0&amp;controls=0&amp;showinfo=0&amp;start=1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+
                     <div class="col cursor">
-                        <img src="{% static 'image/book/B_wed.png' %}" alt="">
+                        <img src="{% static 'image/book/B_wed.png' %}" alt=""
+                            data-bs-toggle="modal" 
+                            data-bs-target="#modal_13">
                     </div>
+                        <div class="modal fade" id="modal_13" role="dialog">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <p><a href="#" data-bs-toggle="modal" data-bs-target="#video13A"> Level A - Semester 1 - Video 1</a></p>
+                                    <p><a href="#" data-bs-toggle="modal" data-bs-target="#video13B">Smile With Me - Video</a></p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+
+                        <div id="video13A" class="modal fade" role="dialog">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <iframe width="800" height="500" src="https://www.youtube.com/embed/nwe76N7J0EI?rel=0&amp;controls=0&amp;showinfo=0&amp;start=1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+
+                        <div id="video13B" class="modal fade" role="dialog">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <iframe width="800" height="500" src="https://www.youtube.com/embed/nwe76N7J0EI?rel=0&amp;controls=0&amp;showinfo=0&amp;start=1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+
                     <div class="col cursor">
-                        <img src="{% static 'image/book/B_thu.png' %}" alt="">
+                        <img src="{% static 'image/book/B_thu.png' %}" alt=""
+                            data-bs-toggle="modal" 
+                            data-bs-target="#modal_14">
                     </div>
+                        <div class="modal fade" id="modal_14" role="dialog">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <p><a href="#" data-bs-toggle="modal" data-bs-target="#video14A"> Level A - Semester 1 - Video 1</a></p>
+                                    <p><a href="#" data-bs-toggle="modal" data-bs-target="#video14B">Smile With Me - Video</a></p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+
+                        <div id="video14A" class="modal fade" role="dialog">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <iframe width="800" height="500" src="https://www.youtube.com/embed/nwe76N7J0EI?rel=0&amp;controls=0&amp;showinfo=0&amp;start=1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+
+                        <div id="video14B" class="modal fade" role="dialog">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <iframe width="800" height="500" src="https://www.youtube.com/embed/nwe76N7J0EI?rel=0&amp;controls=0&amp;showinfo=0&amp;start=1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
                     <div class="col-xl-4 col-sm-6 cursor">
-                        <img src="{% static 'image/book/B_fri.png' %}" alt="">
+                        <img src="{% static 'image/book/B_fri.png' %}" alt=""
+                            data-bs-toggle="modal" 
+                            data-bs-target="#modal_15">
                     </div>
+                        <div class="modal fade" id="modal_15" role="dialog">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <p><a href="#" data-bs-toggle="modal" data-bs-target="#video15A"> Level A - Semester 1 - Video 1</a></p>
+                                    <p><a href="#" data-bs-toggle="modal" data-bs-target="#video15B">Smile With Me - Video</a></p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+
+                        <div id="video15A" class="modal fade" role="dialog">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <iframe width="800" height="500" src="https://www.youtube.com/embed/nwe76N7J0EI?rel=0&amp;controls=0&amp;showinfo=0&amp;start=1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+
+                        <div id="video15B" class="modal fade" role="dialog">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <iframe width="800" height="500" src="https://www.youtube.com/embed/nwe76N7J0EI?rel=0&amp;controls=0&amp;showinfo=0&amp;start=1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
                 </div>
 
                 <div class="row">
-                    <div class="col">
+                    <div class="col cursor">
                         <img src="{% static 'image/book/B_week-4.png' %}" alt="">
                     </div>
                     <div class="col cursor">
-                        <img src="{% static 'image/book/B_mon.png' %}" alt="">
+                        <img src="{% static 'image/book/B_mon.png' %}" alt=""
+                            data-bs-toggle="modal" 
+                            data-bs-target="#modal_16">
                     </div>
+                        <div class="modal fade" id="modal_16" role="dialog">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <p><a href="#" data-bs-toggle="modal" data-bs-target="#video16A"> Level A - Semester 1 - Video 1</a></p>
+                                    <p><a href="#" data-bs-toggle="modal" data-bs-target="#video16B">Smile With Me - Video</a></p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+
+                        <div id="video16A" class="modal fade" role="dialog">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <iframe width="800" height="500" src="https://www.youtube.com/embed/nwe76N7J0EI?rel=0&amp;controls=0&amp;showinfo=0&amp;start=1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+
+                        <div id="video16B" class="modal fade" role="dialog">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <iframe width="800" height="500" src="https://www.youtube.com/embed/nwe76N7J0EI?rel=0&amp;controls=0&amp;showinfo=0&amp;start=1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+
                     <div class="col cursor">
-                        <img src="{% static 'image/book/B_tue.png' %}" alt="">
+                        <img src="{% static 'image/book/B_tue.png' %}" alt=""
+                            data-bs-toggle="modal" 
+                            data-bs-target="#modal_17">
                     </div>
+                        <div class="modal fade" id="modal_17" role="dialog">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <p><a href="#" data-bs-toggle="modal" data-bs-target="#video17A"> Level A - Semester 1 - Video 1</a></p>
+                                    <p><a href="#" data-bs-toggle="modal" data-bs-target="#video17B">Smile With Me - Video</a></p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+
+                        <div id="video17A" class="modal fade" role="dialog">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <iframe width="800" height="500" src="https://www.youtube.com/embed/nwe76N7J0EI?rel=0&amp;controls=0&amp;showinfo=0&amp;start=1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+
+                        <div id="video17B" class="modal fade" role="dialog">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <iframe width="800" height="500" src="https://www.youtube.com/embed/nwe76N7J0EI?rel=0&amp;controls=0&amp;showinfo=0&amp;start=1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+
                     <div class="col cursor">
-                        <img src="{% static 'image/book/B_wed.png' %}" alt="">
+                        <img src="{% static 'image/book/B_wed.png' %}" alt=""
+                            data-bs-toggle="modal" 
+                            data-bs-target="#modal_18">
                     </div>
+                        <div class="modal fade" id="modal_18" role="dialog">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <p><a href="#" data-bs-toggle="modal" data-bs-target="#video18A"> Level A - Semester 1 - Video 1</a></p>
+                                    <p><a href="#" data-bs-toggle="modal" data-bs-target="#video18B">Smile With Me - Video</a></p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+
+                        <div id="video18A" class="modal fade" role="dialog">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <iframe width="800" height="500" src="https://www.youtube.com/embed/nwe76N7J0EI?rel=0&amp;controls=0&amp;showinfo=0&amp;start=1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+
+                        <div id="video18B" class="modal fade" role="dialog">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <iframe width="800" height="500" src="https://www.youtube.com/embed/nwe76N7J0EI?rel=0&amp;controls=0&amp;showinfo=0&amp;start=1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+
                     <div class="col cursor">
-                        <img src="{% static 'image/book/B_thu.png' %}" alt="">
+                        <img src="{% static 'image/book/B_thu.png' %}" alt=""
+                            data-bs-toggle="modal" 
+                            data-bs-target="#modal_19">
                     </div>
+                        <div class="modal fade" id="modal_19" role="dialog">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <p><a href="#" data-bs-toggle="modal" data-bs-target="#video19A"> Level A - Semester 1 - Video 1</a></p>
+                                    <p><a href="#" data-bs-toggle="modal" data-bs-target="#video19B">Smile With Me - Video</a></p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+
+                        <div id="video19A" class="modal fade" role="dialog">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <iframe width="800" height="500" src="https://www.youtube.com/embed/nwe76N7J0EI?rel=0&amp;controls=0&amp;showinfo=0&amp;start=1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+
+                        <div id="video19B" class="modal fade" role="dialog">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <iframe width="800" height="500" src="https://www.youtube.com/embed/nwe76N7J0EI?rel=0&amp;controls=0&amp;showinfo=0&amp;start=1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+
                     <div class="col-xl-4 col-sm-6 cursor">
-                        <img src="{% static 'image/book/B_fri.png' %}" alt="">
+                        <img src="{% static 'image/book/B_fri.png' %}" alt=""
+                            data-bs-toggle="modal" 
+                            data-bs-target="#modal_20">
                     </div>
+                        <div class="modal fade" id="modal_20" role="dialog">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <p><a href="#" data-bs-toggle="modal" data-bs-target="#video20A"> Level A - Semester 1 - Video 1</a></p>
+                                    <p><a href="#" data-bs-toggle="modal" data-bs-target="#video20B">Smile With Me - Video</a></p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+
+                        <div id="video20A" class="modal fade" role="dialog">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <iframe width="800" height="500" src="https://www.youtube.com/embed/nwe76N7J0EI?rel=0&amp;controls=0&amp;showinfo=0&amp;start=1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+
+                        <div id="video20B" class="modal fade" role="dialog">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <iframe width="800" height="500" src="https://www.youtube.com/embed/nwe76N7J0EI?rel=0&amp;controls=0&amp;showinfo=0&amp;start=1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
                 </div>
   
         </main>
