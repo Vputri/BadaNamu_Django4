@@ -30,6 +30,8 @@ urlpatterns = [
     path("level/2", LevelB.as_view(), name="levelB"),
     path("level/3", LevelC.as_view(), name="levelC"),
     path("book/22", Book_1A.as_view(), name="book_1A"),
+    path("book/5", Book_1B.as_view(), name="book_1B"),
+    path("book/34", Book_1C.as_view(), name="book_1C"),
 ]
 
 """

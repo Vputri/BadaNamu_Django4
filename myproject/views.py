@@ -35,6 +35,13 @@ class LevelC(TemplateView):
 class Book_1A(TemplateView):
     template_name = "level A/book1.html"
 
+class Book_1B(TemplateView):
+    template_name = "level B/book1.html"
+
+class Book_1C(TemplateView):
+    template_name = "level C/book1.html"
+
+
 
 """
 

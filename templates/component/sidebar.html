@@ -4,7 +4,7 @@
 
 {% block content %}
 
-<div id="layoutSidenav" class="bg-ocean">
+<div id="layoutSidenav">
     <div id="layoutSidenav_nav" style="height: auto;">
         <nav class="sb-sidenav accordion sb-sidenav-blue" 
             id="sidenavAccordion" 
@@ -94,10 +94,8 @@
             
         </nav>
     </div>
-    
-    <div id="layoutSidenav_content" style="padding-left: 25px;" class="bg-ocean">
-        {% block page_content %}
-        {% endblock %}
+    {% block page_content %}
+    {% endblock %}
         <footer class="py-4 mt-auto">
             <div class="container-fluid px-4">
                 <div class="d-flex align-items-center justify-content-between small">
